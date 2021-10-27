@@ -29,6 +29,7 @@ jobs:
         task:
           - name: Style
             run: |
+              isort --check .
               black --check .
 
           - name: Lint
